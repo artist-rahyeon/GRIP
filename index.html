@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRIP - The Data Standard</title>
+
+    <!-- Pretendard Font -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- GNB -->
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">GRIP</a>
+            <div class="nav-links">
+                <a href="#manifesto">개요</a>
+                <a href="#tech">기술(INDEX)</a>
+                <a href="#lineup">라인업</a>
+                <a href="#" class="nav-btn">구매하기</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-sticky">
+            <h1 class="hero-title" id="hero-title">GRIP</h1>
+            <div class="hero-image-container" id="hero-image">
+                <img src="grip_cover.jpeg" alt="GRIP Book Cover" class="book-cover">
+            </div>
+        </div>
+        <div class="hero-spacer"></div> <!-- Spacer for scroll effect -->
+        <p class="hero-sub fade-up">데이터가 설계한 첫 번째 문제집</p>
+    </section>
+
+    <!-- Manifesto Section -->
+    <section id="manifesto" class="manifesto-section">
+        <div class="content-wrapper">
+            <p class="manifesto-text fade-up">감(感)은 틀릴 수 있습니다</p>
+            <p class="manifesto-text fade-up">하지만 데이터는 거짓말하지 않습니다</p>
+            <p class="manifesto-text fade-up">전국 53% 학교, 주요 학군 90% 분석</p>
+            <p class="manifesto-text fade-up">이제, 시험에 나올 문제만 풉니다</p>
+        </div>
+    </section>
+
+    <!-- Grid Section (Bento) -->
+    <section id="features" class="grid-section">
+        <div class="content-wrapper">
+            <h2 class="section-title fade-up">The Standard.</h2>
+            <div class="bento-grid">
+                <!-- Box 1 (Large) -->
+                <div class="bento-item large fade-up">
+                    <div class="bento-content">
+                        <span class="bento-icon">📄</span> <!-- HWP Icon placeholder -->
+                        <h3>HWP 원본 제공</h3>
+                        <p>변형도, 편집도 자유롭게<br>구매자 전원 HWP 무료 제공</p>
+                    </div>
+                </div>
+
+                <!-- Box 2 (Small) -->
+                <div class="bento-item small fade-up">
+                    <div class="bento-content">
+                        <span class="bento-icon">×2</span>
+                        <h3>Twin Problems</h3>
+                        <p>모든 문제에 대한<br>쌍둥이 변형 문제</p>
+                    </div>
+                </div>
+
+                <!-- Box 3 (Small) -->
+                <div class="bento-item small fade-up">
+                    <div class="bento-content">
+                        <span class="bento-icon">📊</span>
+                        <h3>Auto PPT</h3>
+                        <p>클릭 한 번으로<br>수업용 PPT 자동 생성</p>
+                    </div>
+                </div>
+
+                <!-- Box 4 (Large) -->
+                <div class="bento-item large fade-up">
+                    <div class="bento-content">
+                        <span class="bento-icon">📱</span>
+                        <h3>Smart Grading App</h3>
+                        <p>채점부터 분석 리포트까지<br>손 안의 조교</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Section (Dark Mode) -->
+    <section id="tech" class="tech-section">
+        <div class="content-wrapper">
+            <div class="tech-content fade-up">
+                <span class="tech-label">The Engine</span>
+                <h2 class="tech-title">수학비서 INDEX</h2>
+                <p class="tech-desc">단순한 문제은행이 아닙니다<br>출제 가능성을 정밀하게 계산한 알고리즘입니다</p>
+            </div>
+            <div class="tech-visual fade-up">
+                <!-- Placeholder for Data Map Visualization -->
+                <div class="tech-map-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lineup Section -->
+    <section id="lineup" class="lineup-section">
+        <div class="content-wrapper">
+            <h2 class="section-title fade-up">The Collection</h2>
+            <div class="book-shelf">
+                <!-- Book 1 -->
+                <div class="book-item fade-up">
+                    <div class="book-placeholder shadow"></div>
+                    <h3>GRIP 개념서</h3>
+                    <p class="book-sub">"개념이 흔들린다면"</p>
+                    <p class="book-desc">출제 기반 개념 구조화</p>
+                    <a href="#" class="link-more">더 알아보기 ></a>
+                </div>
+
+                <!-- Book 2 -->
+                <div class="book-item fade-up delay-100">
+                    <div class="book-placeholder shadow"></div>
+                    <h3>GRIP 유형서</h3>
+                    <p class="book-sub">"실전이 필요하다면"</p>
+                    <p class="book-desc">전국 내신 필수 유형 총정리</p>
+                    <a href="#" class="link-more">더 알아보기 ></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Designed by YUNSUNG</p>
+            <div class="footer-links">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+            </div>
+            <p class="copyright">Copyright © 2026 GRIP. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
