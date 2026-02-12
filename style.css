@@ -392,6 +392,149 @@ footer {
     color: var(--text-secondary);
 }
 
+/* Reality Section */
+.reality-section {
+    padding-bottom: var(--section-spacing);
+    background: #fff;
+    text-align: center;
+}
+
+.stat-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.stat-item {
+    text-align: center;
+    opacity: 0;
+}
+
+.stat-number {
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--accent-blue);
+    display: block;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.stat-desc {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.stat-sub {
+    font-size: 17px;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+/* Comparison Section */
+.comparison-section {
+    padding: var(--section-spacing) 0;
+    background: #F5F5F7;
+}
+
+.comparison-container {
+    background: #fff;
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.comparison-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 19px;
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+}
+
+.comparison-row.header {
+    font-weight: 700;
+    border-bottom: 2px solid var(--text-primary);
+    padding-bottom: 15px;
+}
+
+.col-feature {
+    flex: 1;
+    text-align: left;
+    font-weight: 600;
+}
+
+.col-others {
+    flex: 1;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.col-grip {
+    flex: 1;
+    text-align: center;
+    font-weight: 700;
+    color: var(--accent-blue);
+}
+
+.highlight {
+    color: var(--accent-blue);
+}
+
+/* Workflow Section */
+.workflow-section {
+    padding: var(--section-spacing) 0;
+    background: #fff;
+    text-align: center;
+}
+
+.workflow-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.step-item {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    opacity: 0;
+}
+
+.step-num {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-blue);
+    background: rgba(0, 113, 227, 0.1);
+    padding: 4px 12px;
+    border-radius: 99px;
+    margin-bottom: 20px;
+}
+
+.step-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.step-item p {
+    font-size: 17px;
+    color: var(--text-secondary);
+}
+
+.step-line {
+    width: 60px;
+    height: 2px;
+    background: var(--border-color);
+}
+
 /* Animation Classes */
 @keyframes pulse {
     0% {
@@ -452,4 +595,37 @@ footer {
     }
 
     /* Hide links on mobile for now */
+
+    /* New Sections Responsive */
+    .stat-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .stat-number {
+        font-size: 60px;
+    }
+
+    .comparison-container {
+        padding: 30px 20px;
+        overflow-x: scroll;
+    }
+
+    .comparison-row {
+        min-width: 500px;
+        font-size: 15px;
+    }
+
+    /* Horizontal scroll for table */
+    .workflow-steps {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .step-line {
+        width: 2px;
+        height: 40px;
+    }
+
+    /* Vertical line on mobile */
 }
