@@ -535,6 +535,63 @@ footer {
     background: var(--border-color);
 }
 
+/* Contact Section */
+.contact-section {
+    padding: var(--section-spacing) 0;
+    background: #F5F5F7;
+    text-align: center;
+}
+
+.contact-desc {
+    font-size: 21px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.kakao-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #FAE100;
+    /* Kakao Yellow */
+    color: #371D1E;
+    /* Kakao Brown */
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kakao-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(250, 225, 0, 0.4);
+}
+
+.qr-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-code {
+    width: 180px;
+    height: 180px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.qr-label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
 /* Animation Classes */
 @keyframes pulse {
     0% {
