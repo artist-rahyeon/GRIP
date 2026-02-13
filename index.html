@@ -10,7 +10,7 @@
     <link rel="stylesheet" as="style" crossorigin
         href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_v3.css?v=fixTitle1">
 </head>
 
 <body>
@@ -23,6 +23,7 @@
                 <a href="#manifesto">개요</a>
                 <a href="#tech">기술(INDEX)</a>
                 <a href="#lineup">라인업</a>
+                <a href="#contact">Q&A</a>
                 <a href="#" class="nav-btn">구매하기</a>
             </div>
         </div>
@@ -32,11 +33,18 @@
     <section class="hero-section">
         <div class="hero-sticky">
             <h1 class="hero-title" id="hero-title">GRIP</h1>
-            <div class="hero-image-container" id="hero-image">
-                <img src="grip_cover.jpeg" alt="GRIP Book Cover" class="book-cover">
+
+            <div class="hero-teaser" id="hero-teaser">
+                <p>SEEN NOTHING</p>
+                <p>EXPERIENCED NOTHING</p>
+                <p>UNTIL NOW >>></p>
             </div>
         </div>
         <div class="hero-spacer"></div> <!-- Spacer for scroll effect -->
+        <div class="hero-main-image-wrap" id="hero-showcase">
+            <img src="grip_main.png" alt="GRIP Main" class="hero-main-image">
+            <div class="hero-glow"></div>
+        </div>
         <p class="hero-sub fade-up">데이터가 설계한 첫 번째 문제집</p>
     </section>
 
@@ -49,6 +57,8 @@
             <p class="manifesto-text fade-up">이제, 시험에 나올 문제만 풉니다.</p>
         </div>
     </section>
+
+
 
     <!-- The Reality Section -->
     <section id="reality" class="reality-section">
@@ -116,14 +126,80 @@
     <!-- Tech Section (Dark Mode) -->
     <section id="tech" class="tech-section">
         <div class="content-wrapper">
-            <div class="tech-content fade-up">
+            <div class="tech-header fade-up">
                 <span class="tech-label">The Engine</span>
-                <h2 class="tech-title">수학비서 INDEX</h2>
-                <p class="tech-desc">단순한 문제은행이 아닙니다<br>출제 가능성을 정밀하게 계산한 알고리즘입니다</p>
+                <h2 class="tech-title">GRIP의 핵심기술<br>수학비서 <span class="tech-tag">INDEX</span></h2>
+                <p class="tech-desc">GRIP은 단순한 문제은행이 아닌,<br>'출제 가능성'을 정밀하게 계산한 학습 시스템입니다.</p>
             </div>
-            <div class="tech-visual fade-up">
-                <!-- Placeholder for Data Map Visualization -->
-                <div class="tech-map-glow"></div>
+
+            <div class="tech-index-card fade-up delay-100">
+                <div class="index-logo-box">
+                    <span class="index-text">INDEX</span>
+                    <div class="index-star">✶</div> <!-- Using a character for now, can be SVG -->
+                    <span class="index-sub">수학비서</span>
+                </div>
+                <div class="index-desc">
+                    <p>수학비서 인덱스는<br>수백만 개의 내신 문제 데이터를 기반으로<br>출제되지 않는 문제를 구분하고,<br><strong>반드시 필요한 문제만 남깁니다.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="tech-stats-container fade-up delay-200">
+                <div class="stats-header">
+                    <div class="stats-icon">✺</div>
+                    <h3>내신 확보율</h3>
+                </div>
+                <p class="stats-main-text">전국 기준 <span class="highlight-blue">53%</span>,<br>교육 학구열이 높은 <span
+                        class="highlight-cyan">주요지역 90%</span> 이상 확보</p>
+
+                <div class="stats-visual-box">
+                    <div class="map-area">
+                        <img src="korea_tech_map.png" alt="Korea Tech Map" class="korea-map-img" />
+                        <!-- Region Labels (Overlay) -->
+                        <div class="map-overlay">
+                            <div class="map-region seoul" style="top: 28%; left: 32%;">서울</div>
+                            <div class="map-region daegu" style="top: 58%; left: 62%;">대구</div>
+                            <div class="map-region busan" style="top: 75%; left: 68%;">부산</div>
+                        </div>
+                    </div>
+
+                    <div class="chart-area">
+                        <div class="chart-title">지역별 확보율</div>
+                        <ul class="chart-list">
+                            <li><span class="city">대구</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="width: 93%;"></div>
+                                </div> <span class="percent">93%</span>
+                            </li>
+                            <li><span class="city">서울</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="width: 87%;"></div>
+                                </div> <span class="percent">87%</span>
+                            </li>
+                            <li><span class="city">광주</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="width: 87%;"></div>
+                                </div> <span class="percent">87%</span>
+                            </li>
+                            <li><span class="city">울산</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="width: 80%;"></div>
+                                </div> <span class="percent">80%</span>
+                            </li>
+                            <li><span class="city">대전</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="width: 76%;"></div>
+                                </div> <span class="percent">76%</span>
+                            </li>
+                            <li><span class="city">세종</span>
+                                <div class="bar-bg">
+                                    <div class="bar-fill" style="width: 74%;"></div>
+                                </div> <span class="percent">74%</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="stats-footer">*실시간으로 시험지 확보율이 높아지는 중</p>
             </div>
         </div>
     </section>
@@ -158,6 +234,43 @@
                     <div class="col-others">종이 채점</div>
                     <div class="col-grip highlight">앱 연동 자동 분석</div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inception Section (New Request) -->
+    <section id="inception" class="inception-section">
+        <div class="content-wrapper">
+            <div class="inception-header fade-up">
+                <h2>GRIP 개념서는<br>기존 개념서와 <span class="text-white">다릅니다.</span></h2>
+            </div>
+
+            <div class="inception-message-box fade-up delay-100">
+                <p>감이 아닌 데이터로,<br>배워야 할 개념의<br><span class="text-red">우선순위를 설계했습니다.</span></p>
+            </div>
+
+            <div class="inception-comparison fade-up delay-200">
+                <div class="inception-col old">
+                    <h3>기존 개념서</h3>
+                    <ul>
+                        <li>교과서 나열식</li>
+                        <li>이론/예제 반복</li>
+                        <li>과잉 정보</li>
+                    </ul>
+                </div>
+                <div class="inception-col new">
+                    <h3>GRIP 개념서</h3>
+                    <ul>
+                        <li>출제 기반 개념 구조화</li>
+                        <li>개념 ▸ 이해 ▸ 적용 ▸ 정리<br>의 학습루프</li>
+                        <li>출제 확률 기반 선정된<br>필수 개념만 수록</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="inception-footer fade-up delay-200">
+                <span class="brand-grip">GRIP.</span>
+                <span class="brand-inception">INCEPTION</span>
             </div>
         </div>
     </section>
@@ -242,7 +355,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=cleanup1"></script>
 </body>
 
 </html>
